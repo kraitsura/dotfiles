@@ -1,0 +1,12 @@
+Ghostty Shaders
+
+Clone the shaders from your existing config or from a shader repository.
+
+Source location: ~/.config/ghostty/shaders/
+
+The shaders referenced in the config are:
+- bettercrt.glsl
+- bloom.glsl
+- tft.glsl (commented out)
+
+To use shaders, copy the shaders/ folder to ~/.config/ghostty/shaders/

@@ -1,0 +1,13 @@
+session: dev
+root: $HOME/Projects
+windows:
+  - name: main
+    layout: main-horizontal
+    commands:
+      - nvim
+    panes:
+      - commands:
+          - echo "Welcome Back"
+  - name: sideview
+    panes:
+      - layout: vertical

@@ -1,0 +1,124 @@
+# Custom Shaders
+# custom-shader = ./shaders/tft.glsl
+custom-shader = ./shaders/bettercrt.glsl
+custom-shader = ./shaders/bloom.glsl
+custom-shader-animation = always
+macos-icon = chalkboard
+# Merge tabs into title bar
+macos-titlebar-style = tabs
+
+# Optional: Make Option key work as Alt
+macos-option-as-alt = true
+
+# Optional: Use display-p3 color space for better colors
+window-colorspace = display-p3
+# Glass Aesthetic - Terafox background with Matrix colors
+#background-opacity = 0.65
+#background-blur-radius = 15
+
+# Font - Ligatures are key for code readability
+font-family = "JetBrains Mono"
+font-size = 13
+font-thicken = false
+font-feature = +calt
+font-feature = +liga
+
+# Terafox background with Matrix hacker colors
+background = #152528
+foreground = #00ff41
+cursor-color = #fb7185
+selection-background = #001a00
+selection-foreground = #00ff41
+
+# ANSI Colors - Matrix green, amber, rose palette
+palette = 0=#000000
+palette = 1=#fb7185
+palette = 2=#00ff41
+palette = 3=#fbbf24
+palette = 4=#00cc33
+palette = 5=#f43f5e
+palette = 6=#00ff41
+palette = 7=#a8a8a8
+palette = 8=#525252
+palette = 9=#fda4af
+palette = 10=#33ff66
+palette = 11=#fcd34d
+palette = 12=#00ff41
+palette = 13=#fb923c
+palette = 14=#00ff88
+palette = 15=#e5e5e5
+
+# Better padding for readability
+window-padding-x = 20
+window-padding-y = 16
+window-padding-balance = true
+
+# Cursor - block is better for coding
+cursor-style = block
+cursor-style-blink = false
+
+# Window
+window-decoration = true
+window-theme = dark
+window-inherit-working-directory = true
+window-inherit-font-size = true
+
+# Performance
+shell-integration = detect
+shell-integration-features = cursor,sudo,title
+
+# Large scrollback for debugging
+scrollback-limit = 50000
+
+# Mouse - better for selecting code
+copy-on-select = clipboard
+mouse-hide-while-typing = true
+clipboard-trim-trailing-spaces = true
+
+# Link handling - open URLs, files
+link-url = true
+
+# Quality of life
+confirm-close-surface = true
+quit-after-last-window-closed = false
+auto-update = check
+
+# Keybinds for development workflow
+keybind = ctrl+shift+c=copy_to_clipboard
+keybind = ctrl+shift+v=paste_from_clipboard
+keybind = ctrl+shift+t=new_tab
+keybind = ctrl+shift+w=close_surface
+keybind = ctrl+tab=next_tab
+keybind = ctrl+shift+tab=previous_tab
+keybind = ctrl+shift+n=new_window
+keybind = ctrl+shift+f=toggle_fullscreen
+keybind = ctrl+shift+equal=increase_font_size:1
+keybind = ctrl+shift+minus=decrease_font_size:1
+keybind = ctrl+shift+0=reset_font_size
+keybind = ctrl+shift+d=new_split:right
+keybind = ctrl+shift+e=new_split:down
+keybind = shift+enter=text:\n
+
+# tmux keybinds (Cmd + key sends Ctrl-b prefix + key to tmux)
+# \x02 = Ctrl+b (tmux prefix)
+keybind = cmd+d=text:\x02%
+keybind = cmd+shift+d=text:\x02"
+keybind = cmd+enter=text:\x02c
+keybind = cmd+shift+x=text:\x02x
+keybind = cmd+shift+s=text:\x02s
+keybind = cmd+shift+z=text:\x02z
+# tmux window switching (Option + number)
+keybind = alt+1=text:\x021
+keybind = alt+2=text:\x022
+keybind = alt+3=text:\x023
+keybind = alt+4=text:\x024
+keybind = alt+5=text:\x025
+keybind = alt+6=text:\x026
+keybind = alt+7=text:\x027
+keybind = alt+8=text:\x028
+keybind = alt+9=text:\x029
+# tmux pane navigation (Option + hjkl)
+keybind = alt+h=text:\x02h
+keybind = alt+j=text:\x02j
+keybind = alt+k=text:\x02k
+keybind = alt+l=text:\x02l

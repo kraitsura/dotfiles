@@ -1,0 +1,25 @@
+# Zathura configuration for VimTeX integration
+
+# Enable synctex for inverse search (Ctrl+Click in PDF -> jump to source)
+set synctex true
+# For inverse search, use nvim remote. The server name will be set by vimtex.
+# Ctrl+Click in PDF to jump to source line in neovim
+set synctex-editor-command "nvim --server /tmp/nvim-vimtex --remote-send '<Esc>:VimtexInverseSearch %{line} \"%{input}\"<CR>'"
+
+# Appearance
+set default-bg "#1a1b26"
+set default-fg "#a9b1d6"
+
+# Clipboard
+set selection-clipboard clipboard
+
+# Recolor for dark mode (optional - toggle with Ctrl+r)
+set recolor true
+set recolor-lightcolor "#1a1b26"
+set recolor-darkcolor "#a9b1d6"
+
+# Better scrolling
+set scroll-step 50
+
+# Fit width by default
+set adjust-open "best-fit"
