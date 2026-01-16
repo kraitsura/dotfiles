@@ -1,0 +1,73 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "mcp__plugin_beads_beads__close",
+      "Bash(ls:*)",
+      "Bash(xargs basename:*)",
+      "Bash(go build:*)",
+      "mcp__plugin_beads_beads__set_context",
+      "mcp__plugin_beads_beads__create",
+      "mcp__plugin_beads_beads__dep",
+      "mcp__plugin_beads_beads__ready",
+      "mcp__plugin_beads_beads__update",
+      "mcp__plugin_beads_beads__comment_add",
+      "mcp__plugin_beads_beads__dep_tree",
+      "mcp__plugin_beads_beads__blocked",
+      "mcp__plugin_beads_beads__list",
+      "mcp__plugin_beads_beads__stats",
+      "WebSearch",
+      "Bash(wc:*)",
+      "Bash(cat:*)",
+      "mcp__plugin_beads_beads__show",
+      "Bash(python3 -m py_compile:*)",
+      "Bash(bd delete:*)",
+      "mcp__plugin_beads_beads__context",
+      "mcp__plugin_beads_beads__comment",
+      "Bash(python3 -m pytest:*)",
+      "Bash(uv run python3:*)",
+      "Bash(go test:*)"
+    ],
+    "defaultMode": "default"
+  },
+  "model": "opus",
+  "hooks": {
+    "PreCompact": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bd prime"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bd prime"
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "frontend-design@claude-code-plugins": true,
+    "ralph-wiggum@claude-plugins-official": true,
+    "rust-analyzer-lsp@claude-plugins-official": true,
+    "beads@beads-marketplace": true,
+    "typescript-lsp@claude-plugins-official": true
+  },
+  "alwaysThinkingEnabled": true,
+  "addCoAuthoredBy": false,
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline.sh"
+  }
+}

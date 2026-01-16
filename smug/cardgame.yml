@@ -1,0 +1,32 @@
+session: cardgame
+root: $HOME/Projects/cardgame_socket_project
+windows:
+  - name: code
+    layout: main-horizontal
+    commands:
+      - nvim
+    panes:
+      - type: horizontal
+        commands:
+          - clear
+  - name: sideview
+    commands:
+      - clear
+    panes:
+      - layout: vertical
+        commands:
+          - clear
+  - name: ssh
+    layout: tiled
+    commands:
+      - ssh areddy19@general3.asu.edu
+    panes:
+      - layout: horizontal
+        commands:
+          - ssh areddy19@general4.asu.edu
+      - layout: tiled
+        commands:
+          - ssh areddy19@general5.asu.edu
+      - layout: horizontal
+        commands:
+          - ssh areddy19@general5.asu.edu

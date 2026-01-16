@@ -1,7 +1,8 @@
+
 # Custom Shaders
 # custom-shader = ./shaders/tft.glsl
 custom-shader = ./shaders/bettercrt.glsl
-custom-shader = ./shaders/bloom.glsl
+# custom-shader = ./shaders/bloom.glsl
 custom-shader-animation = always
 macos-icon = chalkboard
 # Merge tabs into title bar
@@ -15,6 +16,7 @@ window-colorspace = display-p3
 # Glass Aesthetic - Terafox background with Matrix colors
 #background-opacity = 0.65
 #background-blur-radius = 15
+
 
 # Font - Ligatures are key for code readability
 font-family = "JetBrains Mono"
@@ -107,6 +109,8 @@ keybind = cmd+enter=text:\x02c
 keybind = cmd+shift+x=text:\x02x
 keybind = cmd+shift+s=text:\x02s
 keybind = cmd+shift+z=text:\x02z
+keybind = cmd+`=text:\x02d
+keybind = cmd+shift+backspace=text:\x02:
 # tmux window switching (Option + number)
 keybind = alt+1=text:\x021
 keybind = alt+2=text:\x022

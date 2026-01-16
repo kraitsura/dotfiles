@@ -1,0 +1,17 @@
+session: shilp
+
+root: $HOME/Projects/shilp
+
+windows:
+        - name: code
+          layout: main-horizontal
+          commands:
+                - nvim
+          panes:
+                - type: horizontal
+                  commands:
+                        - clear
+        - name: directory
+          layout: main-vertical
+          commands:
+                - nvim .

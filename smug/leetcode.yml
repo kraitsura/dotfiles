@@ -1,0 +1,20 @@
+session: leetcode
+
+root: ~/.local/share/nvim/leetcode
+
+windows:
+  - name: solve
+    layout: main-vertical
+    options:
+      main-pane-width: 75%
+    commands:
+      - nvim -c Leet
+    panes:
+      - commands:
+          - claude
+  - name: notes
+    commands:
+      - nvim
+  - name: run
+    commands:
+      - clear

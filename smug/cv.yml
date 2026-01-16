@@ -1,0 +1,6 @@
+session: cv
+root: ~/Projects/latex/resumes
+windows:
+  - name: editor
+    commands:
+      - nvim

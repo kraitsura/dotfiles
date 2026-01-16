@@ -121,6 +121,8 @@ alias dev="smug start"
 alias dkill="smug stop"
 alias dedit="smug edit"
 alias dlist="smug list"
+alias cv="~/.config/smug/cv-start.sh"
+alias leet="smug start leetcode"
 
 # lsd aliases
 
@@ -193,6 +195,10 @@ gwtc() {
 alias gwtls='git worktree list'
 
 
+# X/Twitter CLI
+alias tweet='python3 ~/.config/x/tweet.py'
+
+
 export PATH=$PATH:/Users/aaryareddy/Library/Python/3.12/bin
 export PATH=$PATH:/Users/aaryareddy/.local/bin
 
@@ -219,3 +225,8 @@ export PATH="/Users/aaryareddy/.bun/bin:$PATH"
 # D-Bus for zathura synctex support
 export DBUS_SESSION_BUS_ADDRESS="unix:path=$(launchctl getenv DBUS_LAUNCHD_SESSION_BUS_SOCKET)"
 
+
+# opencode
+export PATH=/Users/aaryareddy/.opencode/bin:$PATH
+eval "$(fnm env --use-on-cd)"
+export PATH="$HOME/.local/bin:$PATH"

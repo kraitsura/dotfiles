@@ -1,0 +1,31 @@
+session: colosseum
+
+root: ~/Projects/colosseum/colosseum-hq
+
+windows:
+  - name: code
+    layout: main-vertical
+    options:
+      main-pane-width: 65%
+    commands:
+      - nvim
+    panes:
+      - commands:
+          - claude
+  - name: dev
+    commands:
+      - bun run dev
+  - name: beads
+    commands:
+      - bv
+  - name: swarm
+    layout: tiled
+    commands:
+      - claude
+    panes:
+      - commands:
+          - claude
+      - commands:
+          - claude
+      - commands:
+          - claude
